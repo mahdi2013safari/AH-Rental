@@ -17,6 +17,7 @@ public class Frist_step_fragment extends Fragment {
 
     public Frist_step_fragment() {
         // Required empty public constructor
+        // gi ijlkjasdklj
     }
 
 
