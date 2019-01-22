@@ -32,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_search:
 //                    mTextMessage.setText("Search");
-                    Toast.makeText(HomeActivity.this, "Searching proparty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HomeActivity.this, "Searching Proparty", Toast.LENGTH_SHORT).show();
                     return true;
             }
             return false;
