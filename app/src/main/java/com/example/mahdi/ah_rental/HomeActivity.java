@@ -1,16 +1,30 @@
 package com.example.mahdi.ah_rental;
 
+
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mahdi.ah_rental.Home.Home_fragment;
+import com.example.mahdi.ah_rental.Home.Notification_fragment;
+import com.example.mahdi.ah_rental.Home.Search_fragment;
+import com.example.mahdi.ah_rental.share_proparty_fragments.First_step_share_prop_frag;
+
 public class HomeActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
+    Home_fragment home_fragment;
+    Notification_fragment notification_fragment;
+    Search_fragment search_fragment;
+    First_step_share_prop_frag share_fragment;
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -21,17 +35,21 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.navigation_home:
 //                    mTextMessage.setText(R.string.title_home);
                     Toast.makeText(HomeActivity.this, "Click Home", Toast.LENGTH_SHORT).show();
+                    changeFragment(home_fragment);
                     return true;
                 case R.id.navigation_share:
 //                    mTextMessage.setText("shareproparty");
+                    changeFragment(share_fragment);
                     Toast.makeText(HomeActivity.this, "Your clicking on share button", Toast.LENGTH_SHORT).show();
                     return true;
                 case R.id.navigation_notifications:
 //                    mTextMessage.setText(R.string.title_notifications);
+                    changeFragment(notification_fragment);
                     Toast.makeText(HomeActivity.this, "Nofitcations", Toast.LENGTH_SHORT).show();
                     return true;
                 case R.id.navigation_search:
 //                    mTextMessage.setText("Search");
+                    changeFragment(search_fragment);
                     Toast.makeText(HomeActivity.this, "Searching Proparty", Toast.LENGTH_SHORT).show();
                     return true;
             }
@@ -47,6 +65,19 @@ public class HomeActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        home_fragment = new Home_fragment();
+        notification_fragment = new Notification_fragment();
+        search_fragment = new Search_fragment();
+        share_fragment = new First_step_share_prop_frag();
+        changeFragment(home_fragment);
+    }
+
+    public void changeFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.main_content_home,fragment);
+        fragmentTransaction.commit();
     }
 
 }

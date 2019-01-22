@@ -12,12 +12,11 @@ import com.example.mahdi.ah_rental.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Frist_step_fragment extends Fragment {
+public class Second_step_share_prop_frag extends Fragment {
 
 
-    public Frist_step_fragment() {
+    public Second_step_share_prop_frag() {
         // Required empty public constructor
-        // gi ijlkjasdklj
     }
 
 
@@ -25,7 +24,7 @@ public class Frist_step_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_frist_step_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_second_step_share_prop_frag, container, false);
     }
 
 }
