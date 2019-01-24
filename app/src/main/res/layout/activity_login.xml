@@ -1,32 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="40dp"
         tools:context=".LoginActivity">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gmail_auth"
+        android:background="@drawable/button_style"
+        android:text="@string/facebook"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_facebook_auth"
+        android:background="@color/red"
+        android:text="@string/gmail"
+        android:layout_below="@+id/btn_gmail_auth"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+
+        android:textSize="20dp"
+        />
     
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_username"
+        android:layout_below="@+id/btn_facebook_auth"
         android:hint="Enter Username"
+        android:layout_marginTop="20dp"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_password"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txt_username"
         android:hint="Enter Password"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txt_password"
         android:id="@+id/btn_auth_user"
+        android:background="@drawable/button_style"
         android:text="Login"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20dp"
         />
 
 
 
-</LinearLayout>
+</RelativeLayout>

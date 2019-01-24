@@ -4,11 +4,13 @@ package com.example.mahdi.ah_rental;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
     Home_fragment home_fragment;
     Notification_fragment notification_fragment;
     Search_fragment search_fragment;
-    First_step_share_prop_frag share_fragment;
+    FloatingActionButton button_new_share;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -33,22 +35,14 @@ public class HomeActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-//                    mTextMessage.setText(R.string.title_home);
                     Toast.makeText(HomeActivity.this, "Click Home", Toast.LENGTH_SHORT).show();
                     changeFragment(home_fragment);
                     return true;
-                case R.id.navigation_share:
-//                    mTextMessage.setText("shareproparty");
-                    changeFragment(share_fragment);
-                    Toast.makeText(HomeActivity.this, "Your clicking on share button", Toast.LENGTH_SHORT).show();
-                    return true;
                 case R.id.navigation_notifications:
-//                    mTextMessage.setText(R.string.title_notifications);
                     changeFragment(notification_fragment);
                     Toast.makeText(HomeActivity.this, "Nofitcations", Toast.LENGTH_SHORT).show();
                     return true;
                 case R.id.navigation_search:
-//                    mTextMessage.setText("Search");
                     changeFragment(search_fragment);
                     Toast.makeText(HomeActivity.this, "Searching Proparty", Toast.LENGTH_SHORT).show();
                     return true;
@@ -66,10 +60,17 @@ public class HomeActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        button_new_share = findViewById(R.id.floatingButtonNewShare);
+        button_new_share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(HomeActivity.this, "this is new share files", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         home_fragment = new Home_fragment();
         notification_fragment = new Notification_fragment();
         search_fragment = new Search_fragment();
-        share_fragment = new First_step_share_prop_frag();
         changeFragment(home_fragment);
     }
 
