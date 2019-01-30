@@ -9,6 +9,26 @@
     <string name="home">Home</string>
     <string name="notification">Notification</string>
     <string name="welcome_home">Welcome to Afghan Home Rental</string>
+    <string name="buy">BUY</string>
+    <string name="rent">RENT</string>
+    <string name="pledge">PLEDGE</string>
+    <string name="all">All</string>
+    <string name="apartment">Apartment</string>
+    <string name="shop">Shop</string>
+    <string name="student">Student</string>
+    <string name="choose_proparty">Choose Property</string>
+    <string name="any_location">Any location</string>
+    <string name="close_to_me">Close to me</string>
+    <string name="location_name">Location name</string>
+    <string name="set_location">Set location</string>
+    <string name="bed_room">Bed room</string>
+    <string name="any">Any</string>
+    <string name="plus_1">1+</string>
+    <string name="plus_2">2+</string>
+    <string name="plus_3">3+</string>
+    <string name="plus_4">4+</string>
+    <string name="plus_5">5+</string>
+    <string name="message_search_specific">Another specification of property searched automatically</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <!-- TODO: Remove or change this placeholder text -->

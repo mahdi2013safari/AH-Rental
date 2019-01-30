@@ -57,16 +57,15 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        mTextMessage =  findViewById(R.id.message);
+        BottomNavigationView navigation =  findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         button_new_share = findViewById(R.id.floatingButtonNewShare);
         button_new_share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent();
-                startActivity(i);
+                Toast.makeText(HomeActivity.this, "Click on share", Toast.LENGTH_SHORT).show();
             }
         });
 
