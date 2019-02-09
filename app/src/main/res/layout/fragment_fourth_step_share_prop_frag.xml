@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="40dp"
+    android:gravity="center"
     tools:context=".share_proparty_fragments.Fourth_step_share_prop_frag">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_gps"
+                android:id="@+id/btn_share_get_current_gps"/>
+            <Button
+                android:id="@+id/btn_share_get_google_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/google_map"
+                />
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/txt_share_address"
+            android:layout_marginTop="10dp"
+            android:hint="@string/address"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/txt_share_district"
+            android:layout_marginTop="10dp"
+            android:hint="@string/district"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/txt_share_description"
+            android:layout_marginTop="10dp"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_share_next_one"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="20dp"
+            android:text="@string/finish"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+    </LinearLayout>
 
-</FrameLayout>
+</RelativeLayout>

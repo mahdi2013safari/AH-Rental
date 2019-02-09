@@ -19,6 +19,7 @@ import com.example.mahdi.ah_rental.Home.Home_fragment;
 import com.example.mahdi.ah_rental.Home.Notification_fragment;
 import com.example.mahdi.ah_rental.Home.Search_fragment;
 import com.example.mahdi.ah_rental.share_proparty_fragments.First_step_share_prop_frag;
+import com.example.mahdi.ah_rental.share_proparty_fragments.ShareActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -65,6 +66,8 @@ public class HomeActivity extends AppCompatActivity {
         button_new_share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent share_activity = new Intent(HomeActivity.this, ShareActivity.class);
+                startActivity(share_activity);
                 Toast.makeText(HomeActivity.this, "Click on share", Toast.LENGTH_SHORT).show();
             }
         });

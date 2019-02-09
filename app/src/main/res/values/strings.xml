@@ -29,6 +29,21 @@
     <string name="plus_4">4+</string>
     <string name="plus_5">5+</string>
     <string name="message_search_specific">Another specification of property searched automatically</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="ads">Ads</string>
+    <string name="for_rent">For</string>
+    <string name="next">Next</string>
+    <string name="rooms">Rooms</string>
+    <string name="toilets">Toilets</string>
+    <string name="bathroom">Bathrooms</string>
+    <string name="more_tage">More Tag</string>
+    <string name="current_gps">Current GPS</string>
+    <string name="google_map">Google MAP</string>
+    <string name="address">Address</string>
+    <string name="district">District</string>
+    <string name="description">Description</string>
+    <string name="finish">Finish</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <!-- TODO: Remove or change this placeholder text -->

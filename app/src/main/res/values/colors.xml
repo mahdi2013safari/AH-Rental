@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#4ea7fa</color>
+    <color name="colorPrimary">#008cf8</color>
     <color name="colorPrimaryDark">#023888</color>
     <color name="colorAccent">#a2f9f7</color>
     <color name="blueDarkBtn">#004a83</color>
     <color name="blueLightBtn">#0085ec</color>
     <color name="white">#ffffff</color>
     <color name="red">#ff5959</color>
+    <color name="orange">#ed7c03</color>
+    <color name="background_activity">#c9c9c9</color>
 
 </resources>

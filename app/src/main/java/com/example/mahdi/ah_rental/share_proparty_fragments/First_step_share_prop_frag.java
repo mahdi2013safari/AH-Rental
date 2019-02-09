@@ -29,7 +29,6 @@ public class First_step_share_prop_frag extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view =  inflater.inflate(R.layout.fragment_first_step_fragment, container, false);
-
         return view;
     }
 
