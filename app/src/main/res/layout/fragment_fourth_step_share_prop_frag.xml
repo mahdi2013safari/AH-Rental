@@ -52,7 +52,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_share_next_one"
+            android:id="@+id/btn_share_next_finish"
             android:background="@drawable/button_style"
             android:layout_marginTop="20dp"
             android:text="@string/finish"

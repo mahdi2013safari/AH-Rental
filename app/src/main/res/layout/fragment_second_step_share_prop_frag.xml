@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="40dp"
     tools:context=".share_proparty_fragments.Second_step_share_prop_frag">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="this is image chooser side"
-        android:textSize="20dp"/>
-</FrameLayout>
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/image_proparty_share"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:text="@string/add_image"
+            android:textColor="@color/white"
+            android:id="@+id/btn_share_add_image"
+            android:drawableRight="@drawable/ic_image"
+            android:paddingLeft="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:id="@+id/btn_share_next_second"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
