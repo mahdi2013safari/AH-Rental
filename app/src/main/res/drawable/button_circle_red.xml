@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item android:state_pressed="false">
         <shape android:shape="rectangle">
             <stroke android:color="@color/blueDarkBtn">
@@ -8,9 +7,8 @@
             <corners android:radius="50dp">
 
             </corners>
-            <gradient android:startColor="@color/blueDarkBtn"
-                android:endColor="@color/blueLightBtn"
-                >
+            <gradient android:startColor="@color/lightRed"
+                android:endColor="@color/red">
 
             </gradient>
         </shape>
@@ -23,12 +21,11 @@
             <corners android:radius="50dp">
 
             </corners>
-            <gradient android:startColor="@color/blueLightBtn"
-                android:endColor="@color/blueDarkBtn"
+            <gradient android:startColor="@color/lightRed"
+                android:endColor="@color/red"
                 >
 
             </gradient>
         </shape>
     </item>
-
 </selector>

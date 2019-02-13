@@ -9,5 +9,6 @@
     <color name="red">#ff5959</color>
     <color name="orange">#ed7c03</color>
     <color name="background_activity">#c9c9c9</color>
+    <color name="lightRed">#ff8282</color>
 
 </resources>
