@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:gravity="center"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundwelcome"
     tools:context=".WelcomeActivity">
 
-
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo_welcome"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo_orange"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
         android:text="@string/welcome_home"/>
 
-</RelativeLayout>
+</LinearLayout>

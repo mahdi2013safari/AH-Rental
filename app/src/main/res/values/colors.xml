@@ -10,5 +10,6 @@
     <color name="orange">#ed7c03</color>
     <color name="background_activity">#c9c9c9</color>
     <color name="lightRed">#ff8282</color>
+    <color name="warning">#e1aa12</color>
 
 </resources>
