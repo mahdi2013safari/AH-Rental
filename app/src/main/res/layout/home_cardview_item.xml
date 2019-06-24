@@ -2,8 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
-    android:paddingTop="10dp"
     android:background="@color/background_activity"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -11,109 +9,128 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/home_cardview_items"
-        android:layout_margin="15dp"
-        android:padding="20dp"
-        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="0dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
             android:paddingBottom="10dp"
             android:orientation="vertical">
+
             <ImageView
+                android:id="@+id/image_home_card"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:id="@+id/image_home_card"
-                android:src="@drawable/image_home"/>
-            <LinearLayout
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:src="@drawable/image_home" />
+
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:textAlignment="center"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:textColor="@color/blueLightBtn"
-                    android:text="@string/delete"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:textColor="@color/blueLightBtn"
-                    android:text="@string/edit"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:textColor="@color/blueLightBtn"
-                    android:text="@string/share"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:textColor="@color/blueLightBtn"
-                    android:text="@string/ads"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Price : 3244000 Afg"
                     android:id="@+id/tv_price_home_card"
                     android:textColor="@color/orange"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
                     android:textSize="20dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_proparty_home_card"
-                    android:textColor="@color/white"
-                    android:text="proparty: Home"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_bathroom_home_card"
-                    android:textColor="@color/white"
-                    android:text="Bedroom : 3 , Bathroom : 4 , Toilets : 4"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_include_home_card"
-                    android:textColor="@color/white"
-                    android:text="Include : Kitchen, Hall, Garage, Parking"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:id="@+id/tv_capacity_home_card"
-                    android:text="Capacity: 5 person "/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_address_home_card"
-                    android:textColor="@color/white"
-                    android:text="Address: Kabul Afghanistan"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_date_home_card"
-                    android:textColor="@color/white"
-                    android:text="Published at : 2018/6/12"/>
+            </android.support.v7.widget.CardView>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- begin of icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_home_primary"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_store_primary"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:drawableEnd="@drawable/ic_school"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_delete"
+                       />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_apartment_primary"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_home_black_24dp"/>
+
+                </LinearLayout>
+                <!-- end of icon -->
+                <!-- text file -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:id="@+id/tv_proparty_home_card"
+                        android:text="proparty: Home"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_bathroom_home_card"
+                        android:autoSizeTextType="uniform"
+                        android:text="Bedroom : 3 , Bathroom : 4 , Toilets : 4"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_include_home_card"
+                        android:autoSizeTextType="uniform"
+                        android:text="Include : Kitchen, Hall, Garage, Parking"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:id="@+id/tv_capacity_home_card"
+                        android:text="Capacity: 5 person "/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_address_home_card"
+                        android:autoSizeTextType="uniform"
+                        android:text="Address: Kabul Afghanistan"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:id="@+id/tv_date_home_card"
+                        android:text="Published at : 2018/6/12"/>
+
+                </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </android.support.constraint.ConstraintLayout>
